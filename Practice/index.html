@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Product UI</title>
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-details {
+    padding: 15px;
+}
+
+.product-name {
+    font-size: 1.5em;
+    margin: 0;
+    color: #333;
+}
+
+.product-price {
+    font-size: 1.2em;
+    color: #e63946;
+    margin: 10px 0;
+}
+
+.product-discount {
+    font-size: 1em;
+    color: #1d3557;
+}
+
+    </style>
+</head>
+<body>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="**image**" alt="Product Image">
+        </div>
+        <div class="product-details">
+            <h2 class="product-name">**Product Name**</h2>
+            <p class="product-price">$**price**</p>
+            <p class="product-discount">Discount: **less**%</p>
+        </div>
+    </div>
+</body>
+</html>
